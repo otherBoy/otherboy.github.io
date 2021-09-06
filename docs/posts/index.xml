@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - Deeper Mind, Simpler Life</title>
+        <link>https://otherboy.github.io/posts/</link>
+        <description>All Posts | Deeper Mind, Simpler Life</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 06 Sep 2021 10:41:59 &#43;0800</lastBuildDate><atom:link href="https://otherboy.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>First_post to test</title>
+    <link>https://otherboy.github.io/posts/my-frist-post/</link>
+    <pubDate>Mon, 06 Sep 2021 10:41:59 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://otherboy.github.io/posts/my-frist-post/</guid>
+    <description><![CDATA[1. HAHAHAAHAHAHAHA blalalalala]]></description>
+</item></channel>
+</rss>
