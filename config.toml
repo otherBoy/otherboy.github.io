@@ -1,0 +1,8 @@
+baseURL = "https://otherboy.github.io/"
+languageCode = "en-us"
+title = "Deeper Mind, Simpler Life"
+hasCJKLanguage = true
+theme = "LoveIt"
+
+[params]
+  version = "0.2.X"
