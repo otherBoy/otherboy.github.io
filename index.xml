@@ -6,11 +6,11 @@
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 06 Sep 2021 10:41:59 &#43;0800</lastBuildDate>
             <atom:link href="https://otherboy.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>First_post to test</title>
-    <link>https://otherboy.github.io/posts/my-frist-post/</link>
+    <title>Python Build-in Functions for Beginner</title>
+    <link>https://otherboy.github.io/posts/python-built-in-functions-for-beginner/</link>
     <pubDate>Mon, 06 Sep 2021 10:41:59 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://otherboy.github.io/posts/my-frist-post/</guid>
-    <description><![CDATA[1. HAHAHAAHAHAHAHA blalalalala]]></description>
+    <guid>https://otherboy.github.io/posts/python-built-in-functions-for-beginner/</guid>
+    <description><![CDATA[Build-in Functions are functions which provided by Python interpreter, and that are always available. There are 69 build-in functions till Python 3.9. In this blog, we selected 59 important build-in functions for Python beginners, and classified them into 8 main categories. 1. Numerical Type bool(x): Return a Boolean value, True or False int(x, base=10): Return an integer object constructed from a number or string, or return 0 if no arguments]]></description>
 </item></channel>
 </rss>

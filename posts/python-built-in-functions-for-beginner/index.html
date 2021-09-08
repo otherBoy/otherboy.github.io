@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Python Build-in Functions for Beginner - Deeper Mind, Simpler Life</title><meta name="Description" content=""><meta property="og:title" content="Python Build-in Functions for Beginner" />
+<meta property="og:description" content="Build-in Functions are functions which provided by Python interpreter, and that are always available. There are 69 build-in functions till Python 3.9. In this blog, we selected 59 important build-in functions for Python beginners, and classified them into 8 main categories. 1. Numerical Type bool(x): Return a Boolean value, True or False int(x, base=10): Return an integer object constructed from a number or string, or return 0 if no arguments" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://otherboy.github.io/posts/python-built-in-functions-for-beginner/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-06T10:41:59&#43;08:00" />
+<meta property="article:modified_time" content="2021-09-06T10:41:59&#43;08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python Build-in Functions for Beginner"/>
+<meta name="twitter:description" content="Build-in Functions are functions which provided by Python interpreter, and that are always available. There are 69 build-in functions till Python 3.9. In this blog, we selected 59 important build-in functions for Python beginners, and classified them into 8 main categories. 1. Numerical Type bool(x): Return a Boolean value, True or False int(x, base=10): Return an integer object constructed from a number or string, or return 0 if no arguments"/>
+<meta name="application-name" content="Deeper Mind, Simpler Life">
+<meta name="apple-mobile-web-app-title" content="Deeper Mind, Simpler Life"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://otherboy.github.io/posts/python-built-in-functions-for-beginner/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Python Build-in Functions for Beginner",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/otherboy.github.io\/posts\/python-built-in-functions-for-beginner\/"
+        },"genre": "posts","wordcount":  1910 ,
+        "url": "https:\/\/otherboy.github.io\/posts\/python-built-in-functions-for-beginner\/","datePublished": "2021-09-06T10:41:59+08:00","dateModified": "2021-09-06T10:41:59+08:00","publisher": {
+            "@type": "Organization",
+            "name": "Ro"},"author": {
+                "@type": "Person",
+                "name": "Ro"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Deeper Mind, Simpler Life">Deeper Mind, Simpler Life</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Deeper Mind, Simpler Life">Deeper Mind, Simpler Life</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Python Build-in Functions for Beginner</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Ro</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-06">2021-09-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1910 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-numerical">1. Numerical</a></li>
+        <li><a href="#2-data-structure">2. Data Structure</a></li>
+        <li><a href="#3-operation">3. Operation</a></li>
+        <li><a href="#4-namespace">4. Namespace</a></li>
+        <li><a href="#5-iterator">5. Iterator</a></li>
+        <li><a href="#5-interpreter">5. Interpreter</a></li>
+        <li><a href="#6-io">6. IO</a></li>
+        <li><a href="#7-ram">7. RAM</a></li>
+        <li><a href="#8-system">8. System</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Build-in Functions are functions which provided by Python interpreter, and that are always available. There are 69 build-in functions till Python 3.9.<br>
+In this blog, we selected 59 important build-in functions for Python beginners, and classified them into 8 main categories.</p>
+<h3 id="1-numerical">1. Numerical</h3>
+<h5 id="type">Type</h5>
+<p><strong>bool(x)</strong>: Return a Boolean value, True or False<br>
+<strong>int(x, base=10)</strong>: Return an integer object constructed from a number or string, or return 0 if no arguments are given. Base is optional, base 0 means to interpret exactly as a code literal, so that the actual base is 2, 8, 10, or 16<br>
+<strong>float(x)</strong>: Return a floating point number constructed from a number or string<br>
+<strong>complex(x)</strong>: Return a complex number with the value real + imag*1j or convert a string or number to a complex number</p>
+<pre><code>&gt;&gt;&gt; bool(10)
+True
+&gt;&gt;&gt; int('10')
+10
+&gt;&gt;&gt; float(10)
+10.0
+&gt;&gt;&gt; complex(10)
+(10+0j)
+</code></pre><h5 id="conversion">Conversion</h5>
+<p><strong>bin(x)</strong>: Convert an integer number to a binary string prefixed with “0b”<br>
+<strong>oct(x)</strong>: Convert an integer number to an octal string prefixed with “0o”<br>
+<strong>hex(x)</strong>: Convert an integer number to a lowercase hexadecimal string prefixed with “0x”</p>
+<pre><code>&gt;&gt;&gt; bin(3)
+'0b11'
+&gt;&gt;&gt; oct(8)
+'0o10'
+&gt;&gt;&gt; hex(255)
+'0xff'
+</code></pre><h5 id="math">Math</h5>
+<p><strong>abs(x)</strong>: Return the absolute value of a number<br>
+<strong>divmod(x, y)</strong>: Take two (non complex) numbers as arguments and return a pair of numbers consisting of their quotient and remainder when using integer division<br>
+<strong>round(x[, ndigits])</strong>: Return number rounded to ndigits precision after the decimal point, ndigits is optional, if ndigits is omitted or is None, it returns the nearest integer to its input<br>
+<strong>pow(base, exp[, mod])</strong>: Return base to the power exp; mod is optional, if mod is present, return base to the power exp, modulo mod<br>
+<strong>sum(iterable[,start])</strong>: Sums start and the items of an iterable from left to right and returns the total<br>
+<strong>min()</strong>: Return the smallest item in an iterable or the smallest of two or more arguments<br>
+<strong>max()</strong>: Return the largest item in an iterable or the largest of two or more arguments</p>
+<pre><code>&gt;&gt;&gt; abs(-1)
+1
+&gt;&gt;&gt; round(2.675, 2)
+2.67
+
+&gt;&gt;&gt; pow(10, 2)
+100
+&gt;&gt;&gt; pow(10, 2, 3)
+1
+
+&gt;&gt;&gt; sum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+55
+
+&gt;&gt;&gt; min(5, 3, 9, 12, 7, 2)
+2
+&gt;&gt;&gt; min([5, 3, 9, 12, 7, 2])
+2
+&gt;&gt;&gt; max(7, 3, 15, 9, 4, 13)
+15
+</code></pre><h3 id="2-data-structure">2. Data Structure</h3>
+<h5 id="sequence">Sequence</h5>
+<p><strong>list(iterable)</strong>: Convert an iterable object to a list<br>
+<strong>tuple(iterable)</strong>: Convert an iterable object to a list<br>
+<strong>range([start,] stop[, step])</strong>: Returns a sequence of numbers, starting from 0 by default, and increments by 1 by default, and stops before a specified number, start and step are optional<br>
+<strong>reversed(seq)</strong>: Return a reverse iterator, seq must be an object which has a __reversed__() method or supports the sequence protocol<br>
+<strong>slice(start, stop[, step])</strong>: Return a slice object representing the set of indices specified by range(start, stop, step), step is optional</p>
+<pre><code>&gt;&gt;&gt; list((1, 2, 3, 4, 5, 6))
+[1, 2, 3, 4, 5, 6]
+&gt;&gt;&gt; tuple([1, 2, 3, 4, 5, 6])
+(1, 2, 3, 4, 5, 6)
+
+&gt;&gt;&gt; for n in range(3, 20, 2):
+...     print(n)
+3
+5
+7
+9
+11
+13
+15
+17
+19
+
+&gt;&gt;&gt; list(reversed('abcdefg'))
+['g', 'f', 'e', 'd', 'c', 'b', 'a']
+
+&gt;&gt;&gt; a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+&gt;&gt;&gt; a[slice(1, 3, 1)]
+[2, 3]
+</code></pre><h5 id="string">String</h5>
+<p><strong>str(object)</strong>: Return a string version of object. If object is not provided, returns the empty string<br>
+<strong>format(value[, format_spec])</strong>: Convert a value to a “formatted” representation, as controlled by format_spec, <a href="https://docs.python.org/3/library/string.html#formatspec" target="_blank" rel="noopener noreffer">Format Spec Details</a><br>
+<strong>bytes([source[, encoding[, errors]]])</strong>: Return a new “bytes” object, which is an immutable sequence of integers in the range 0 &lt;= x &lt; 256<br>
+<strong>bytearray([source[, encoding[, errors]]])</strong>: Return a new array of bytes. The bytearray class is a mutable sequence of integers in the range 0 &lt;= x &lt; 256<br>
+<strong>ord(c)</strong>: Given a string representing one Unicode character, return an integer representing the Unicode code point of that character<br>
+<strong>chr(i)</strong>: Return the string representing a character whose Unicode code point is the integer<br>
+<strong>ascii(obj)</strong>: return a string containing a printable representation of an object, but escape the non-ASCII characters in the string returned by repr() using \x, \u or \U escapes<br>
+<strong>repr(obj)</strong>: Return a string containing a printable representation of an object</p>
+<pre><code>&gt;&gt;&gt; str(1234)
+'1234'
+&gt;&gt;&gt; format(3, 'b')
+'11'
+&gt;&gt;&gt; format(97, 'c')
+'a'
+&gt;&gt;&gt; format(11, 'd')
+'11'
+&gt;&gt;&gt; format(11, 'o')
+'13' 
+&gt;&gt;&gt; format(11, 'x')
+'b'
+&gt;&gt;&gt; format(11, 'X')
+'B'
+&gt;&gt;&gt; format(11, 'n')
+'11'
+&gt;&gt;&gt; format(123456789, 'e')
+'1.234568e+08'
+&gt;&gt;&gt; format(123456789, '0.2e')
+'1.23e+08'
+&gt;&gt;&gt; format(123456789, '0.2E')
+'1.23E+08'
+&gt;&gt;&gt; format(1.23456789, 'f')
+'1.234568'
+&gt;&gt;&gt; format(1.23456789, '0.2f')
+'1.23'
+&gt;&gt;&gt; format(1.23456789, '0.10f')
+'1.2345678900'
+&gt;&gt;&gt; format(1.23456789e+3, 'F')
+'1234.567890'
+
+&gt;&gt;&gt; bytes(&quot;哈哈哈&quot;, encoding='utf-8')
+b'\xe5\x93\x88\xe5\x93\x88\xe5\x93\x88'
+&gt;&gt;&gt; bytearray(&quot;hello world&quot; ,encoding ='utf-8')
+bytearray(b'hello world')
+&gt;&gt;&gt; bytearray(&quot;hello world&quot; ,encoding ='utf-8')[0]
+104
+
+&gt;&gt;&gt; ord('a')
+97
+&gt;&gt;&gt; chr(100)
+'d'
+&gt;&gt;&gt; ascii(&quot;w&quot;)
+&quot;'w'&quot;
+&gt;&gt;&gt; repr('hello world')
+&quot;'hello world'&quot;
+</code></pre><h5 id="collection">Collection</h5>
+<p><strong>dict()</strong>: Create a new dictionary<br>
+<strong>set()</strong>: Return a new set object, optionally with elements taken from iterable<br>
+<strong>frozenset([iterable])</strong>: Return a new frozenset object, optionally with elements taken from iterable</p>
+<pre><code>&gt;&gt;&gt; dict({'a': 1, 'b': 2, 'a': 3})
+{'a': 3, 'b': 2}
+&gt;&gt;&gt; set([1, 1, 2, 2, 3])
+{1, 2, 3}
+&gt;&gt;&gt; frozenset([1,1,2,2,3])
+frozenset({1, 2, 3})
+</code></pre><h3 id="3-operation">3. Operation</h3>
+<p><strong>len(obj)</strong>: Return the length (the number of items) of an object<br>
+<strong>sorted(iterable, key=None, reverse=False)</strong>: Return a new sorted list from the items in iterable. Key and reverse are optional. Key specifies a function of one argument that is used to extract a comparison key from each element in iterable, reverse is a boolean value<br>
+<strong>enumerate(iterable, start=0)</strong>: Return an enumerate object. iterable must be a sequence, an iterator, or some other object which supports iteration<br>
+<strong>all(iterable)</strong>: Return True if all elements of the iterable are true (or if the iterable is empty)<br>
+<strong>any(iterable)</strong>: Return True if any element of the iterable is true. If the iterable is empty, return False<br>
+<strong>zip()</strong>: Returns an iterator of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables<br>
+<strong>filter(function, iterable)</strong>: Construct an iterator from those elements of iterable for which function returns true. iterable may be either a sequence, a container which supports iteration, or an iterator. It is equivalent to the generator expression (item for item in iterable if function(item)) if function is not None and (item for item in iterable if item) if function is None<br>
+<strong>map()</strong>: Return an iterator that applies function to every item of iterable, yielding the results</p>
+<pre><code>&gt;&gt;&gt; len([1, 2, 3, 4, 5, 6])
+6
+
+&gt;&gt;&gt; sorted([5, 7, 6, 12, 1, 13, 9, 18, 5])
+[1, 5, 5, 6, 7, 9, 12, 13, 18]
+&gt;&gt;&gt; sorted([5, 7, 6, 12, 1, 13, 9, 18, 5], reverse=True)
+[18, 13, 12, 9, 7, 6, 5, 5, 1]
+
+&gt;&gt;&gt; list(enumerate(['Spring', 'Summer', 'Fall', 'Winter']))
+[(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
+
+&gt;&gt;&gt; all([1, 'hello', True, 0])
+False
+&gt;&gt;&gt; all([1, 'hello', True, 9])
+True
+&gt;&gt;&gt; any([0, 0, 0, False, 1, 'hello'])
+True
+
+&gt;&gt;&gt; list(zip([1, 2, 3], [4, 5, 6]))
+[(1, 4), (2, 5), (3, 6)]
+
+&gt;&gt;&gt; def func(i):
+...    return i % 2 == 1
+&gt;&gt;&gt; list(filter(func, [1, 2, 3, 4, 5, 6, 7, 8, 9]))
+[1, 3, 5, 7, 9]
+
+&gt;&gt;&gt; def f(i):   
+...   return i + 1
+&gt;&gt;&gt; list(map(f, [1, 2, 3, 4, 5, 6, 7]))
+[2, 3, 4, 5, 6, 7, 8]
+&gt;&gt;&gt; 
+</code></pre><h3 id="4-namespace">4. Namespace</h3>
+<p><strong>locals()</strong>: Update and return a dictionary representing the current local symbol table<br>
+<strong>globals()</strong>: Return a dictionary representing the current global symbol table</p>
+<h3 id="5-iterator">5. Iterator</h3>
+<p><strong>next(iterator[, default])</strong>: Retrieve the next item from the iterator by calling its __next__() method. If default is given, it is returned if the iterator is exhausted, otherwise StopIteration is raised.<br>
+<strong>iter()</strong>: Return an iterator object</p>
+<pre><code>&gt;&gt;&gt; a = iter([1, 2, 3, 4, 5])
+&gt;&gt;&gt; next(a)
+1
+&gt;&gt;&gt; next(a)
+2
+&gt;&gt;&gt; next(a)
+3
+&gt;&gt;&gt; next(a)
+4
+&gt;&gt;&gt; next(a)
+5
+&gt;&gt;&gt; next(a)
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+StopIteration
+</code></pre><h3 id="5-interpreter">5. Interpreter</h3>
+<p><strong>eval(expression[, globals[, locals]])</strong>: The expression argument is parsed and evaluated as a Python expression (technically speaking, a condition list) using the globals and locals dictionaries as global and local namespace<br>
+<strong>exec(obj[, globals[, locals]])</strong>: This function supports dynamic execution of Python code. object must be either a string or a code object. If it is a string, the string is parsed as a suite of Python statements which is then executed (unless a syntax error occurs). If it is a code object, it is simply executed<br>
+<strong>compile(source, filename, mode, flags=0, dont_inherit=False, optimize=-1)</strong>: Compile the source into a code or AST object. Code objects can be executed by exec() or eval(). source can either be a normal string, a byte string, or an AST object</p>
+<pre><code>&gt;&gt;&gt; x = 1
+&gt;&gt;&gt; eval('x + 1')
+2
+
+&gt;&gt;&gt; s = &quot;for i in range(5): print(i)&quot;
+&gt;&gt;&gt; exec(s)
+0
+1
+2
+3
+4
+
+&gt;&gt;&gt; com = compile(&quot;5 + 6 + 7&quot;, &quot;&quot;, mode=&quot;eval&quot;)
+&gt;&gt;&gt; eval(com)
+18
+</code></pre><h3 id="6-io">6. IO</h3>
+<p><strong>print(*objects, sep=' &lsquo;, end='\n&rsquo;, file=sys.stdout, flush=False)</strong>: Print objects to the text stream file, separated by sep and followed by end. sep, end, file and flush, if present, must be given as keyword arguments<br>
+<strong>input()</strong>: The function then reads a line from input, converts it to a string (stripping a trailing newline), and returns that. When EOF is read, EOFError is raised<br>
+<strong>open(file, mode=&lsquo;r&rsquo;, buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)</strong>: Open file and return a corresponding file object. If the file cannot be opened, an OSError is raised</p>
+<pre><code>&gt;&gt;&gt; print(&quot;hello&quot;, &quot;world&quot;, sep=&quot;_&quot;, end=&quot;!&quot;)
+hello_world!
+
+&gt;&gt;&gt; s = input('--&gt; ') 
+--&gt; Hello world!
+&gt;&gt;&gt; s
+'Hello world!'
+
+&gt;&gt;&gt; f = open('file', mode='r', encoding='utf-8')
+&gt;&gt;&gt; f.read()
+&gt;&gt;&gt; f.close()
+</code></pre><h3 id="7-ram">7. RAM</h3>
+<p><strong>hash(obj)</strong>: Return the hash value of the object (if it has one). Hash values are integers<br>
+<strong>id(obj)</strong>: Return the “identity” of an object. This is an integer which is guaranteed to be unique and constant for this object during its lifetime<br>
+<strong>memoryview(obj)</strong>: Create a memoryview that references object. object must support the buffer protocol<br>
+<strong>object()</strong>: Return a new featureless object. object is a base for all classes<br>
+<strong>isinstance(obj, classinfo)</strong>: Return True if the object argument is an instance of the classinfo argument, or of a (direct, indirect or virtual) subclass thereof<br>
+<strong>issubclass(class, classinfo)</strong>: Return True if class is a subclass (direct, indirect or virtual) of classinfo. A class is considered a subclass of itself<br>
+<strong>type(obj)</strong>: Return the type of an object</p>
+<pre><code>&gt;&gt;&gt; hash(&quot;hello world&quot;)
+-9210861515036063026
+
+&gt;&gt;&gt; s = &quot;hello world&quot;
+&gt;&gt;&gt; id(s)
+140669275673392
+
+&gt;&gt;&gt; a = memoryview(bytes(b'hello world'))
+&gt;&gt;&gt; a[0]
+104
+&gt;&gt;&gt; a[1]
+101
+
+&gt;&gt;&gt; object()
+&lt;object object at 0x7ff01c5961e0&gt;
+&gt;&gt;&gt; isinstance('hello world', int)
+False
+&gt;&gt;&gt; isinstance('hello world', str)
+True
+&gt;&gt;&gt; issubclass(str, object)
+True
+&gt;&gt;&gt; type(100)
+&lt;class 'int'&gt;
+</code></pre><h3 id="8-system">8. System</h3>
+<p><strong>__ import__(name, globals=None, locals=None, fromlist=(), level=0)</strong>: The function imports the module name, potentially using the given globals and locals to determine how to interpret the name in a package context<br>
+<strong>help(obj)</strong>: Invoke the built-in help system<br>
+<strong>callable(obj)</strong>: Return True if the object argument appears callable, False if not. If this returns True, it is still possible that a call fails, but if it is False, calling object will never succeed<br>
+<strong>dir(obj)</strong>: Without arguments, return the list of names in the current local scope. With an argument, attempt to return a list of valid attributes for that object</p>
+<pre><code>&gt;&gt;&gt; help(str)
+
+&gt;&gt;&gt; a = 100
+&gt;&gt;&gt; callable(a)
+False
+&gt;&gt;&gt; def f():
+...     return 100
+&gt;&gt;&gt; callable(f)
+True
+
+&gt;&gt;&gt; dir(tuple)
+</code></pre></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-09-06</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.83.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
