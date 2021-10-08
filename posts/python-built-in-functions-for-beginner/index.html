@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/otherboy.github.io\/posts\/python-built-in-functions-for-beginner\/"
-        },"genre": "posts","wordcount":  1910 ,
+        },"genre": "posts","wordcount":  2122 ,
         "url": "https:\/\/otherboy.github.io\/posts\/python-built-in-functions-for-beginner\/","datePublished": "2021-09-06T10:41:59+08:00","dateModified": "2021-09-06T10:41:59+08:00","publisher": {
             "@type": "Organization",
             "name": "Ro"},"author": {
@@ -36,7 +36,7 @@
             },"description": ""
     }
     </script></head>
-    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
@@ -44,7 +44,18 @@
             <a href="/" title="Deeper Mind, Simpler Life">Deeper Mind, Simpler Life</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw"></i>
                 </a>
             </div>
@@ -60,7 +71,23 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
@@ -77,8 +104,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Python Build-in Functions for Beginner</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Ro</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-06">2021-09-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1910 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-06">2021-09-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2122 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -88,8 +115,28 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#1-numerical">1. Numerical</a></li>
-        <li><a href="#2-data-structure">2. Data Structure</a></li>
+        <li><a href="#1-numerical">1. Numerical</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#type">Type</a></li>
+                <li><a href="#conversion">Conversion</a></li>
+                <li><a href="#math">Math</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#2-data-structure">2. Data Structure</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#sequence">Sequence</a></li>
+                <li><a href="#string">String</a></li>
+                <li><a href="#collection">Collection</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><a href="#3-operation">3. Operation</a></li>
         <li><a href="#4-namespace">4. Namespace</a></li>
         <li><a href="#5-iterator">5. Iterator</a></li>
@@ -109,25 +156,51 @@ In this blog, we selected 59 important build-in functions for Python beginners, 
 <strong>int(x, base=10)</strong>: Return an integer object constructed from a number or string, or return 0 if no arguments are given. Base is optional, base 0 means to interpret exactly as a code literal, so that the actual base is 2, 8, 10, or 16<br>
 <strong>float(x)</strong>: Return a floating point number constructed from a number or string<br>
 <strong>complex(x)</strong>: Return a complex number with the value real + imag*1j or convert a string or number to a complex number</p>
-<pre><code>&gt;&gt;&gt; bool(10)
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt;&gt;&gt; bool(10)
 True
-&gt;&gt;&gt; int('10')
+&gt;&gt;&gt; int(&#39;10&#39;)
 10
 &gt;&gt;&gt; float(10)
 10.0
 &gt;&gt;&gt; complex(10)
 (10+0j)
-</code></pre><h5 id="conversion">Conversion</h5>
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="conversion">Conversion</h5>
 <p><strong>bin(x)</strong>: Convert an integer number to a binary string prefixed with “0b”<br>
 <strong>oct(x)</strong>: Convert an integer number to an octal string prefixed with “0o”<br>
 <strong>hex(x)</strong>: Convert an integer number to a lowercase hexadecimal string prefixed with “0x”</p>
-<pre><code>&gt;&gt;&gt; bin(3)
-'0b11'
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt;&gt;&gt; bin(3)
+&#39;0b11&#39;
 &gt;&gt;&gt; oct(8)
-'0o10'
+&#39;0o10&#39;
 &gt;&gt;&gt; hex(255)
-'0xff'
-</code></pre><h5 id="math">Math</h5>
+&#39;0xff&#39;
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="math">Math</h5>
 <p><strong>abs(x)</strong>: Return the absolute value of a number<br>
 <strong>divmod(x, y)</strong>: Take two (non complex) numbers as arguments and return a pair of numbers consisting of their quotient and remainder when using integer division<br>
 <strong>round(x[, ndigits])</strong>: Return number rounded to ndigits precision after the decimal point, ndigits is optional, if ndigits is omitted or is None, it returns the nearest integer to its input<br>
@@ -135,7 +208,30 @@ True
 <strong>sum(iterable[,start])</strong>: Sums start and the items of an iterable from left to right and returns the total<br>
 <strong>min()</strong>: Return the smallest item in an iterable or the smallest of two or more arguments<br>
 <strong>max()</strong>: Return the largest item in an iterable or the largest of two or more arguments</p>
-<pre><code>&gt;&gt;&gt; abs(-1)
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt;&gt;&gt; abs(-1)
 1
 &gt;&gt;&gt; round(2.675, 2)
 2.67
@@ -154,14 +250,43 @@ True
 2
 &gt;&gt;&gt; max(7, 3, 15, 9, 4, 13)
 15
-</code></pre><h3 id="2-data-structure">2. Data Structure</h3>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="2-data-structure">2. Data Structure</h3>
 <h5 id="sequence">Sequence</h5>
 <p><strong>list(iterable)</strong>: Convert an iterable object to a list<br>
 <strong>tuple(iterable)</strong>: Convert an iterable object to a list<br>
 <strong>range([start,] stop[, step])</strong>: Returns a sequence of numbers, starting from 0 by default, and increments by 1 by default, and stops before a specified number, start and step are optional<br>
 <strong>reversed(seq)</strong>: Return a reverse iterator, seq must be an object which has a __reversed__() method or supports the sequence protocol<br>
 <strong>slice(start, stop[, step])</strong>: Return a slice object representing the set of indices specified by range(start, stop, step), step is optional</p>
-<pre><code>&gt;&gt;&gt; list((1, 2, 3, 4, 5, 6))
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt;&gt;&gt; list((1, 2, 3, 4, 5, 6))
 [1, 2, 3, 4, 5, 6]
 &gt;&gt;&gt; tuple([1, 2, 3, 4, 5, 6])
 (1, 2, 3, 4, 5, 6)
@@ -178,13 +303,15 @@ True
 17
 19
 
-&gt;&gt;&gt; list(reversed('abcdefg'))
-['g', 'f', 'e', 'd', 'c', 'b', 'a']
+&gt;&gt;&gt; list(reversed(&#39;abcdefg&#39;))
+[&#39;g&#39;, &#39;f&#39;, &#39;e&#39;, &#39;d&#39;, &#39;c&#39;, &#39;b&#39;, &#39;a&#39;]
 
 &gt;&gt;&gt; a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 &gt;&gt;&gt; a[slice(1, 3, 1)]
 [2, 3]
-</code></pre><h5 id="string">String</h5>
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="string">String</h5>
 <p><strong>str(object)</strong>: Return a string version of object. If object is not provided, returns the empty string<br>
 <strong>format(value[, format_spec])</strong>: Convert a value to a “formatted” representation, as controlled by format_spec, <a href="https://docs.python.org/3/library/string.html#formatspec" target="_blank" rel="noopener noreffer">Format Spec Details</a><br>
 <strong>bytes([source[, encoding[, errors]]])</strong>: Return a new “bytes” object, which is an immutable sequence of integers in the range 0 &lt;= x &lt; 256<br>
@@ -193,63 +320,127 @@ True
 <strong>chr(i)</strong>: Return the string representing a character whose Unicode code point is the integer<br>
 <strong>ascii(obj)</strong>: return a string containing a printable representation of an object, but escape the non-ASCII characters in the string returned by repr() using \x, \u or \U escapes<br>
 <strong>repr(obj)</strong>: Return a string containing a printable representation of an object</p>
-<pre><code>&gt;&gt;&gt; str(1234)
-'1234'
-&gt;&gt;&gt; format(3, 'b')
-'11'
-&gt;&gt;&gt; format(97, 'c')
-'a'
-&gt;&gt;&gt; format(11, 'd')
-'11'
-&gt;&gt;&gt; format(11, 'o')
-'13' 
-&gt;&gt;&gt; format(11, 'x')
-'b'
-&gt;&gt;&gt; format(11, 'X')
-'B'
-&gt;&gt;&gt; format(11, 'n')
-'11'
-&gt;&gt;&gt; format(123456789, 'e')
-'1.234568e+08'
-&gt;&gt;&gt; format(123456789, '0.2e')
-'1.23e+08'
-&gt;&gt;&gt; format(123456789, '0.2E')
-'1.23E+08'
-&gt;&gt;&gt; format(1.23456789, 'f')
-'1.234568'
-&gt;&gt;&gt; format(1.23456789, '0.2f')
-'1.23'
-&gt;&gt;&gt; format(1.23456789, '0.10f')
-'1.2345678900'
-&gt;&gt;&gt; format(1.23456789e+3, 'F')
-'1234.567890'
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt;&gt;&gt; str(1234)
+&#39;1234&#39;
+&gt;&gt;&gt; format(3, &#39;b&#39;)
+&#39;11&#39;
+&gt;&gt;&gt; format(97, &#39;c&#39;)
+&#39;a&#39;
+&gt;&gt;&gt; format(11, &#39;d&#39;)
+&#39;11&#39;
+&gt;&gt;&gt; format(11, &#39;o&#39;)
+&#39;13&#39; 
+&gt;&gt;&gt; format(11, &#39;x&#39;)
+&#39;b&#39;
+&gt;&gt;&gt; format(11, &#39;X&#39;)
+&#39;B&#39;
+&gt;&gt;&gt; format(11, &#39;n&#39;)
+&#39;11&#39;
+&gt;&gt;&gt; format(123456789, &#39;e&#39;)
+&#39;1.234568e+08&#39;
+&gt;&gt;&gt; format(123456789, &#39;0.2e&#39;)
+&#39;1.23e+08&#39;
+&gt;&gt;&gt; format(123456789, &#39;0.2E&#39;)
+&#39;1.23E+08&#39;
+&gt;&gt;&gt; format(1.23456789, &#39;f&#39;)
+&#39;1.234568&#39;
+&gt;&gt;&gt; format(1.23456789, &#39;0.2f&#39;)
+&#39;1.23&#39;
+&gt;&gt;&gt; format(1.23456789, &#39;0.10f&#39;)
+&#39;1.2345678900&#39;
+&gt;&gt;&gt; format(1.23456789e+3, &#39;F&#39;)
+&#39;1234.567890&#39;
 
-&gt;&gt;&gt; bytes(&quot;哈哈哈&quot;, encoding='utf-8')
-b'\xe5\x93\x88\xe5\x93\x88\xe5\x93\x88'
-&gt;&gt;&gt; bytearray(&quot;hello world&quot; ,encoding ='utf-8')
-bytearray(b'hello world')
-&gt;&gt;&gt; bytearray(&quot;hello world&quot; ,encoding ='utf-8')[0]
+&gt;&gt;&gt; bytes(&#34;哈哈哈&#34;, encoding=&#39;utf-8&#39;)
+b&#39;\xe5\x93\x88\xe5\x93\x88\xe5\x93\x88&#39;
+&gt;&gt;&gt; bytearray(&#34;hello world&#34; ,encoding =&#39;utf-8&#39;)
+bytearray(b&#39;hello world&#39;)
+&gt;&gt;&gt; bytearray(&#34;hello world&#34; ,encoding =&#39;utf-8&#39;)[0]
 104
 
-&gt;&gt;&gt; ord('a')
+&gt;&gt;&gt; ord(&#39;a&#39;)
 97
 &gt;&gt;&gt; chr(100)
-'d'
-&gt;&gt;&gt; ascii(&quot;w&quot;)
-&quot;'w'&quot;
-&gt;&gt;&gt; repr('hello world')
-&quot;'hello world'&quot;
-</code></pre><h5 id="collection">Collection</h5>
+&#39;d&#39;
+&gt;&gt;&gt; ascii(&#34;w&#34;)
+&#34;&#39;w&#39;&#34;
+&gt;&gt;&gt; repr(&#39;hello world&#39;)
+&#34;&#39;hello world&#39;&#34;
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="collection">Collection</h5>
 <p><strong>dict()</strong>: Create a new dictionary<br>
 <strong>set()</strong>: Return a new set object, optionally with elements taken from iterable<br>
 <strong>frozenset([iterable])</strong>: Return a new frozenset object, optionally with elements taken from iterable</p>
-<pre><code>&gt;&gt;&gt; dict({'a': 1, 'b': 2, 'a': 3})
-{'a': 3, 'b': 2}
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt;&gt;&gt; dict({&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;a&#39;: 3})
+{&#39;a&#39;: 3, &#39;b&#39;: 2}
 &gt;&gt;&gt; set([1, 1, 2, 2, 3])
 {1, 2, 3}
 &gt;&gt;&gt; frozenset([1,1,2,2,3])
 frozenset({1, 2, 3})
-</code></pre><h3 id="3-operation">3. Operation</h3>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="3-operation">3. Operation</h3>
 <p><strong>len(obj)</strong>: Return the length (the number of items) of an object<br>
 <strong>sorted(iterable, key=None, reverse=False)</strong>: Return a new sorted list from the items in iterable. Key and reverse are optional. Key specifies a function of one argument that is used to extract a comparison key from each element in iterable, reverse is a boolean value<br>
 <strong>enumerate(iterable, start=0)</strong>: Return an enumerate object. iterable must be a sequence, an iterator, or some other object which supports iteration<br>
@@ -258,7 +449,42 @@ frozenset({1, 2, 3})
 <strong>zip()</strong>: Returns an iterator of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables<br>
 <strong>filter(function, iterable)</strong>: Construct an iterator from those elements of iterable for which function returns true. iterable may be either a sequence, a container which supports iteration, or an iterator. It is equivalent to the generator expression (item for item in iterable if function(item)) if function is not None and (item for item in iterable if item) if function is None<br>
 <strong>map()</strong>: Return an iterator that applies function to every item of iterable, yielding the results</p>
-<pre><code>&gt;&gt;&gt; len([1, 2, 3, 4, 5, 6])
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt;&gt;&gt; len([1, 2, 3, 4, 5, 6])
 6
 
 &gt;&gt;&gt; sorted([5, 7, 6, 12, 1, 13, 9, 18, 5])
@@ -266,14 +492,14 @@ frozenset({1, 2, 3})
 &gt;&gt;&gt; sorted([5, 7, 6, 12, 1, 13, 9, 18, 5], reverse=True)
 [18, 13, 12, 9, 7, 6, 5, 5, 1]
 
-&gt;&gt;&gt; list(enumerate(['Spring', 'Summer', 'Fall', 'Winter']))
-[(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
+&gt;&gt;&gt; list(enumerate([&#39;Spring&#39;, &#39;Summer&#39;, &#39;Fall&#39;, &#39;Winter&#39;]))
+[(0, &#39;Spring&#39;), (1, &#39;Summer&#39;), (2, &#39;Fall&#39;), (3, &#39;Winter&#39;)]
 
-&gt;&gt;&gt; all([1, 'hello', True, 0])
+&gt;&gt;&gt; all([1, &#39;hello&#39;, True, 0])
 False
-&gt;&gt;&gt; all([1, 'hello', True, 9])
+&gt;&gt;&gt; all([1, &#39;hello&#39;, True, 9])
 True
-&gt;&gt;&gt; any([0, 0, 0, False, 1, 'hello'])
+&gt;&gt;&gt; any([0, 0, 0, False, 1, &#39;hello&#39;])
 True
 
 &gt;&gt;&gt; list(zip([1, 2, 3], [4, 5, 6]))
@@ -289,13 +515,34 @@ True
 &gt;&gt;&gt; list(map(f, [1, 2, 3, 4, 5, 6, 7]))
 [2, 3, 4, 5, 6, 7, 8]
 &gt;&gt;&gt; 
-</code></pre><h3 id="4-namespace">4. Namespace</h3>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="4-namespace">4. Namespace</h3>
 <p><strong>locals()</strong>: Update and return a dictionary representing the current local symbol table<br>
 <strong>globals()</strong>: Return a dictionary representing the current global symbol table</p>
 <h3 id="5-iterator">5. Iterator</h3>
 <p><strong>next(iterator[, default])</strong>: Retrieve the next item from the iterator by calling its __next__() method. If default is given, it is returned if the iterator is exhausted, otherwise StopIteration is raised.<br>
 <strong>iter()</strong>: Return an iterator object</p>
-<pre><code>&gt;&gt;&gt; a = iter([1, 2, 3, 4, 5])
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt;&gt;&gt; a = iter([1, 2, 3, 4, 5])
 &gt;&gt;&gt; next(a)
 1
 &gt;&gt;&gt; next(a)
@@ -308,17 +555,38 @@ True
 5
 &gt;&gt;&gt; next(a)
 Traceback (most recent call last):
-  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+  File &#34;&lt;stdin&gt;&#34;, line 1, in &lt;module&gt;
 StopIteration
-</code></pre><h3 id="5-interpreter">5. Interpreter</h3>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="5-interpreter">5. Interpreter</h3>
 <p><strong>eval(expression[, globals[, locals]])</strong>: The expression argument is parsed and evaluated as a Python expression (technically speaking, a condition list) using the globals and locals dictionaries as global and local namespace<br>
 <strong>exec(obj[, globals[, locals]])</strong>: This function supports dynamic execution of Python code. object must be either a string or a code object. If it is a string, the string is parsed as a suite of Python statements which is then executed (unless a syntax error occurs). If it is a code object, it is simply executed<br>
 <strong>compile(source, filename, mode, flags=0, dont_inherit=False, optimize=-1)</strong>: Compile the source into a code or AST object. Code objects can be executed by exec() or eval(). source can either be a normal string, a byte string, or an AST object</p>
-<pre><code>&gt;&gt;&gt; x = 1
-&gt;&gt;&gt; eval('x + 1')
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt;&gt;&gt; x = 1
+&gt;&gt;&gt; eval(&#39;x + 1&#39;)
 2
 
-&gt;&gt;&gt; s = &quot;for i in range(5): print(i)&quot;
+&gt;&gt;&gt; s = &#34;for i in range(5): print(i)&#34;
 &gt;&gt;&gt; exec(s)
 0
 1
@@ -326,25 +594,44 @@ StopIteration
 3
 4
 
-&gt;&gt;&gt; com = compile(&quot;5 + 6 + 7&quot;, &quot;&quot;, mode=&quot;eval&quot;)
+&gt;&gt;&gt; com = compile(&#34;5 + 6 + 7&#34;, &#34;&#34;, mode=&#34;eval&#34;)
 &gt;&gt;&gt; eval(com)
 18
-</code></pre><h3 id="6-io">6. IO</h3>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="6-io">6. IO</h3>
 <p><strong>print(*objects, sep=' &lsquo;, end='\n&rsquo;, file=sys.stdout, flush=False)</strong>: Print objects to the text stream file, separated by sep and followed by end. sep, end, file and flush, if present, must be given as keyword arguments<br>
 <strong>input()</strong>: The function then reads a line from input, converts it to a string (stripping a trailing newline), and returns that. When EOF is read, EOFError is raised<br>
 <strong>open(file, mode=&lsquo;r&rsquo;, buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)</strong>: Open file and return a corresponding file object. If the file cannot be opened, an OSError is raised</p>
-<pre><code>&gt;&gt;&gt; print(&quot;hello&quot;, &quot;world&quot;, sep=&quot;_&quot;, end=&quot;!&quot;)
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt;&gt;&gt; print(&#34;hello&#34;, &#34;world&#34;, sep=&#34;_&#34;, end=&#34;!&#34;)
 hello_world!
 
-&gt;&gt;&gt; s = input('--&gt; ') 
+&gt;&gt;&gt; s = input(&#39;--&gt; &#39;) 
 --&gt; Hello world!
 &gt;&gt;&gt; s
-'Hello world!'
+&#39;Hello world!&#39;
 
-&gt;&gt;&gt; f = open('file', mode='r', encoding='utf-8')
+&gt;&gt;&gt; f = open(&#39;file&#39;, mode=&#39;r&#39;, encoding=&#39;utf-8&#39;)
 &gt;&gt;&gt; f.read()
 &gt;&gt;&gt; f.close()
-</code></pre><h3 id="7-ram">7. RAM</h3>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="7-ram">7. RAM</h3>
 <p><strong>hash(obj)</strong>: Return the hash value of the object (if it has one). Hash values are integers<br>
 <strong>id(obj)</strong>: Return the “identity” of an object. This is an integer which is guaranteed to be unique and constant for this object during its lifetime<br>
 <strong>memoryview(obj)</strong>: Create a memoryview that references object. object must support the buffer protocol<br>
@@ -352,14 +639,41 @@ hello_world!
 <strong>isinstance(obj, classinfo)</strong>: Return True if the object argument is an instance of the classinfo argument, or of a (direct, indirect or virtual) subclass thereof<br>
 <strong>issubclass(class, classinfo)</strong>: Return True if class is a subclass (direct, indirect or virtual) of classinfo. A class is considered a subclass of itself<br>
 <strong>type(obj)</strong>: Return the type of an object</p>
-<pre><code>&gt;&gt;&gt; hash(&quot;hello world&quot;)
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt;&gt;&gt; hash(&#34;hello world&#34;)
 -9210861515036063026
 
-&gt;&gt;&gt; s = &quot;hello world&quot;
+&gt;&gt;&gt; s = &#34;hello world&#34;
 &gt;&gt;&gt; id(s)
 140669275673392
 
-&gt;&gt;&gt; a = memoryview(bytes(b'hello world'))
+&gt;&gt;&gt; a = memoryview(bytes(b&#39;hello world&#39;))
 &gt;&gt;&gt; a[0]
 104
 &gt;&gt;&gt; a[1]
@@ -367,20 +681,37 @@ hello_world!
 
 &gt;&gt;&gt; object()
 &lt;object object at 0x7ff01c5961e0&gt;
-&gt;&gt;&gt; isinstance('hello world', int)
+&gt;&gt;&gt; isinstance(&#39;hello world&#39;, int)
 False
-&gt;&gt;&gt; isinstance('hello world', str)
+&gt;&gt;&gt; isinstance(&#39;hello world&#39;, str)
 True
 &gt;&gt;&gt; issubclass(str, object)
 True
 &gt;&gt;&gt; type(100)
-&lt;class 'int'&gt;
-</code></pre><h3 id="8-system">8. System</h3>
+&lt;class &#39;int&#39;&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="8-system">8. System</h3>
 <p><strong>__ import__(name, globals=None, locals=None, fromlist=(), level=0)</strong>: The function imports the module name, potentially using the given globals and locals to determine how to interpret the name in a package context<br>
 <strong>help(obj)</strong>: Invoke the built-in help system<br>
 <strong>callable(obj)</strong>: Return True if the object argument appears callable, False if not. If this returns True, it is still possible that a call fails, but if it is False, calling object will never succeed<br>
 <strong>dir(obj)</strong>: Without arguments, return the list of names in the current local scope. With an argument, attempt to return a list of valid attributes for that object</p>
-<pre><code>&gt;&gt;&gt; help(str)
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt;&gt;&gt; help(str)
 
 &gt;&gt;&gt; a = 100
 &gt;&gt;&gt; callable(a)
@@ -391,7 +722,9 @@ False
 True
 
 &gt;&gt;&gt; dir(tuple)
-</code></pre></div><div class="post-footer" id="post-footer">
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
@@ -416,10 +749,10 @@ True
 
     <div class="post-nav"></div>
 </div>
-</article></div>
+<div id="comments"></div></article></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.83.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
         </div>
     </footer></div>
 
@@ -428,5 +761,5 @@ True
             </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw"></i>
             </a>
-        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>
